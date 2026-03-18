@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background:
+    radial-gradient(circle at top, rgba(255, 206, 58, 0.18), transparent 35%),
+    linear-gradient(180deg, #ffffff 0%, #fffbeb 30%, #fef9c3 70%, #fef3c7 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.zuretta-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 12px;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, #ffe99a 0%, #ffce3a 50%, #ff8c00 100%);
+  outline: none;
+}
+
+.zuretta-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 9999px;
+  border: 3px solid #ffffff;
+  background: linear-gradient(180deg, #ffce3a 0%, #ff8c00 100%);
+  box-shadow: 0 8px 18px rgba(255, 184, 0, 0.3);
+}
+
+.zuretta-slider::-moz-range-thumb {
+  width: 28px;
+  height: 28px;
+  border: 3px solid #ffffff;
+  border-radius: 9999px;
+  background: linear-gradient(180deg, #ffce3a 0%, #ff8c00 100%);
+  box-shadow: 0 8px 18px rgba(255, 184, 0, 0.3);
+}
+
+.zuretta-slider::-moz-range-track {
+  height: 12px;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, #ffe99a 0%, #ffce3a 50%, #ff8c00 100%);
+}
